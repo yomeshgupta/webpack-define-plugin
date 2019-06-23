@@ -1,0 +1,19 @@
+{
+  "name": "webpack-define-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Yomesh Gupta <yomesh.gupta@gmail.com> (http://www.yomeshgupta.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "bluebird": "^3.5.5",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.3.4"
+  }
+}
