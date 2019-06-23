@@ -10,19 +10,13 @@ function init() {
 		.readFileAsync(CONFIG_PATH, { encoding: 'utf8' })
 		.then(content => {
 			return new Promise((resolve, reject) => {
-				let config = void 0;
-
-				try {
-					config = JSON.parse(content);
-				} catch (err) {
-					reject(err);
-				}
+				const config = JSON.parse(content);
 
 				if (!config || !Object.keys(config).length) return reject('Empty Config Found');
 
 				const compiler = webpack({
-					mode: 'production',
-					entry: path.join(__dirname, 'src', 'index.js'),
+					mode: 'none',
+					entry: path.resolve(__dirname, 'src', 'index.js'),
 					output: {
 						path: path.join(__dirname, 'dist'),
 						filename: 'bundle.js'
