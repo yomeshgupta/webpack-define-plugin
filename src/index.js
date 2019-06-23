@@ -33,4 +33,4 @@ if (EXPERIMENTAL_FEATURE_2) {
 	experimentalFeature2 = require('./experimental-2.js');
 }
 
-console.log('Bundle Loaded');
+console.log('Bundle Loaded', window.services);

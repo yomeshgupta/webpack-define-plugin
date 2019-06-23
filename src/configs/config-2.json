@@ -1,0 +1,8 @@
+{
+	"REPORTING": true,
+	"PAYMENT": true,
+	"A_B_TESTING": false,
+	"CLICK_TRACING": false,
+	"EXPERIMENTAL_FEATURE_1": false,
+	"EXPERIMENTAL_FEATURE_2": true
+}
