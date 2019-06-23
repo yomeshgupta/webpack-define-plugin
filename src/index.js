@@ -3,8 +3,8 @@ window.services = {
 	PAYMENT: PAYMENT,
 	A_B_TESTING: A_B_TESTING,
 	CLICK_TRACING: CLICK_TRACING,
-	EXPERMENTAL_FEATURE_1: EXPERMENTAL_FEATURE_1,
-	EXPERMENTAL_FEATURE_2: EXPERMENTAL_FEATURE_2
+	EXPERIMENTAL_FEATURE_1: EXPERIMENTAL_FEATURE_1,
+	EXPERIMENTAL_FEATURE_2: EXPERIMENTAL_FEATURE_2
 };
 
 var reporting;
@@ -24,13 +24,13 @@ if (A_B_TESTING) {
 	abTesting = require('./abTesting.js');
 }
 if (CLICK_TRACING) {
-	clickTracking = require('clickTracking.js');
+	clickTracking = require('./clickTracking.js');
 }
-if (EXPERMENTAL_FEATURE_1) {
-	experimentalFeature1 = require('experimental-1.js');
+if (EXPERIMENTAL_FEATURE_1) {
+	experimentalFeature1 = require('./experimental-1.js');
 }
-if (EXPERMENTAL_FEATURE_2) {
-	experimentalFeature2 = require('experimental-2.js');
+if (EXPERIMENTAL_FEATURE_2) {
+	experimentalFeature2 = require('./experimental-2.js');
 }
 
 console.log('Bundle Loaded');
